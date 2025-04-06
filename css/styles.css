@@ -1,18 +1,56 @@
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* ----------------HERDER-------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -22,6 +60,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  /* margin-right: 76px; */
 }
 .header-logo-span {
   color: #2e2f42;
@@ -38,11 +77,28 @@ body {
   color: #404bbf;
 }
 
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
 .header-address {
   font-style: normal;
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 76px;
+  /* margin-right: auto; */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-address-item {
@@ -69,6 +125,9 @@ body {
 /* -------------------SLOGAN---------------- */
 .slogan {
   background-color: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .slogan-meaning {
@@ -78,6 +137,10 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-top: 188px;
+  /* margin-bottom: 48px; */
+  max-width: 496px;
+  margin: 0 auto 48px auto;
 }
 
 .slogan-button {
@@ -88,6 +151,13 @@ body {
   color: #fff;
   background: #4d5ae5;
   cursor: pointer;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
 }
 
 .slogan-button:hover,
@@ -99,12 +169,19 @@ body {
 
 /* -------------------FEATURE---------------- */
 .feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .feature-title {
 }
 .feature-list {
+  padding-left: 156px;
+  padding-right: 156px;
+  display: flex;
+  gap: 24px;
 }
 .feature-list-member {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .feature-list-subtitle {
   font-weight: 500;
@@ -112,6 +189,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .feature-list-text {
   font-size: 16px;
@@ -134,8 +212,16 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .team-list {
+  padding-bottom: 120px;
+  padding-right: 156px;
+  padding-left: 156px;
+  display: flex;
+  gap: 19px;
+  flex-basis: calc((100% - 57) / 4);
 }
 .team-list-item {
   background-color: #ffffff;
@@ -149,6 +235,8 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 .team-list-text {
   font-size: 16px;
@@ -156,6 +244,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 /* -------------------TEAM---------------- */
@@ -171,10 +260,20 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 156px;
+  padding-right: 156px;
+  gap: 48px 20px;
+  padding-bottom: 120px;
 }
 .portfolio-list-item {
+  flex-basis: calc((100% - 120px) / 6);
 }
 .portfolio-list-pic {
 }
@@ -184,12 +283,16 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-left: 16px;
+  padding-top: 16px;
 }
 .portfolio-list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-top: 8px;
 }
 /* -------------------PORTFOLIO---------------- */
 
@@ -205,6 +308,10 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.footer-container {
+  padding-top: 100px;
+  padding-left: 156px;
+}
 .futer-logo-span {
   color: #f4f4fd;
 }
@@ -213,4 +320,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  padding-top: 17px;
+  padding-bottom: 100px;
 }
