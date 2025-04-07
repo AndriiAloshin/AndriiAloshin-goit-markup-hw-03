@@ -62,6 +62,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  padding: 24px 0;
 }
 .header-logo-span {
   color: #2e2f42;
@@ -206,7 +207,7 @@ body {
 
 .feature-list-member {
   flex-basis: calc((100% - 72px) / 4);
-  border-radius: 0 0 4px 4px;
+  /* border-radius: 0 0 4px 4px; */
 }
 
 .feature-list-subtitle {
@@ -248,10 +249,12 @@ body {
   padding-left: 156px;
   display: flex;
   gap: 24px;
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 .team-list-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .team-list-pic {
 }
