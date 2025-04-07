@@ -89,6 +89,7 @@ body {
 
 .header-address-list {
   display: flex;
+  padding: 24px 0;
   gap: 40px;
 }
 
@@ -205,6 +206,7 @@ body {
 
 .feature-list-member {
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
 .feature-list-subtitle {
@@ -337,6 +339,7 @@ body {
 .footer {
   background-color: #2e2f42;
   padding-left: 156px;
+  padding: 100px 0;
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
@@ -350,7 +353,7 @@ body {
   margin-bottom: 16px;
 }
 .footer-container {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   /* padding-left: 156px; */
 }
 .futer-logo-span {
